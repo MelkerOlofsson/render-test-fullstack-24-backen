@@ -7,6 +7,10 @@ const app = express(),
     response.send({hello: 'World!'})
   })
 
+  app.get('/hej',( _request, response) => {
+    response.send({Hej: 'På Dig!'})
+  })
+
   app.listen(port, () => {
-    console.log(`Lyssnar på https://localhost${port}`)
+    console.log(`Lyssnar på https://localhost:${port}`)
   })
